@@ -1,0 +1,28 @@
+<?php
+
+${name_lo}_id = $URL['where']['{name_lo}_id'];
+
+${name_up} = new {name_up}( ${name_lo}_id );
+
+switch ( $URL['action'] ) {
+	case 'view':
+		$TPL['title'] = _( 'Détail d\'un {name_lo}' );
+		break;
+
+	case 'add':
+		$TPL['title'] = _( 'Ajouter un {name_lo}' );
+		break;
+
+	case 'edit':
+		$TPL['title'] = _( 'Editer un {name_lo}' );
+		break;
+
+	case 'delete':
+		$TPL['title'] = _( 'Supprimer un {name_lo}' );
+		break;
+
+	case 'list':
+		$TPL['title'] = _( 'Liste des {name_lo}s' );
+		$list = ${name_up}->listes( $APPLI );
+		break;
+}

@@ -1,0 +1,1 @@
+<div><?=$Actu->contenu?></div>

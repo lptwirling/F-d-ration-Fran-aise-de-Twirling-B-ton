@@ -1,0 +1,434 @@
+body {
+	background: #e8e8dd url( 'images/bg-body.gif' ) repeat-x;
+	font: 9pt Helvetica, Arial, Tahoma, sans-serif;
+}
+
+body.ajax {
+	background: transparent;
+}
+
+body.ajax div#container, div.load div#container {
+	height: inerit;
+	position: relative;
+	width: 100%;
+	text-align: left;
+}
+
+div#container {
+	height: auto !important;
+	margin: 0 auto;
+	position: relative;
+	width: 980px;
+	text-align: left;
+}
+
+div#header {
+	padding-top: 20px;
+}
+
+div#header-top {
+	margin-bottom: 18px;
+}
+
+div#header div#logo {
+	float: left;
+	font-size: 150%;
+	font-weight: bold;
+	height: 39px;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	width: 450px;
+}
+
+div#header div#logo a {
+	color: #fff;
+	text-decoration: none;
+}
+
+div#header div#logo a:hover {
+	color: #cccccc;
+}
+
+div#userbox {
+	color: #c1cad0;
+	float: right;
+	padding: 12px 0;
+	text-align: right;
+}
+
+div#userbox_off {
+	/*background: url("images/icon-greet-user.gif") no-repeat scroll 0 5px transparent;*/
+	color: #c1cad0;
+	float: right;
+	width: 520px;
+}
+
+div#userbox small {
+	color: #8d9599;
+	display: block;
+	font-size: 0.9em;
+	margin-top: 5px;
+}
+
+div#userbox a {
+	color: #ceac0f;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+div#userbox a:hover {
+	color: #fff;
+}
+
+/** menu **/
+ul#menu {width:600px; float:left;}
+ul#menu li {float:left; height:40px; position:relative}
+ul#menu li a {color:#e0e0e0; text-decoration:none; padding:13px 15px 7px 15px; height:20px; display:inline-block; text-align:center; text-transform:uppercase; font-weight:bold;
+background:url(images/bg-topnav-mask.gif) no-repeat 0 0; position:relative;}
+ul#menu li a:hover {color:#508db8; background:#fff; background:url(images/bg-topnav-mask.gif) no-repeat top right;}
+
+ul#menu li a.top-level {position:relative; padding-right:25px;}
+ul#menu li a.top-level span {background:url(images/bg-toplevel.gif) no-repeat 0px 2px; width:11px; height:8px; display:block; position:absolute; right:10px; top:15px;}
+ul#menu li a.top-level:hover span, .blue span {background-image:url(images/bg-toplevel-hover.png) !important;}
+
+ul#menu li ul {position:absolute; top:40px; min-width:200px !important; left:0px; z-index:999; background:#fff; visibility:hidden; display:none;
+padding-bottom:10px; border:2px solid #ccc; border-left:none; border-top:none; border-right-width:1px; padding-top:5px; -moz-border-radius-bottomleft:5px;
+-moz-border-radius-bottomright:5px; -webkit-border-bottom-right-radius:5px; -webkit-border-bottom-left-radius:5px;}
+ul#menu li ul li {float:none; height:auto; border-bottom:1px dotted #d6d8d9;}
+ul#menu li ul li:hover {background:url(images/bg-submenu-hover.gif) no-repeat;}
+ul#menu li ul li a {padding:6px 3px 6px 20px; display:block !important; background:url(images/link-arrow-regular.gif) no-repeat 10px 10px !important; color:#5c6467;
+text-decoration:none; text-align:left; text-transform:capitalize; height:auto; background-color:none !important; font-weight:normal;}
+ul#menu li ul li a:hover {color:#fff; background-image:url(images/submenuhover.gif) !important;}
+ul#menu li.selected a {background:#6c7275; color:#fff;}
+
+/** search form **/
+div#header form {float:right; width:246px; margin-top:9px;}
+div#header form fieldset legend {display:none;}
+div#header form fieldset label#searchbox {display:block; background:url(images/bg-search.gif) no-repeat; height:21px; width:246px;}
+div#header form fieldset label#searchbox input {background:none; border:none; outline:none; padding:4px 10px 0 23px; color:#666; font-size:0.9em; width: 100%;}
+
+div#content {
+	padding: 25px 0;
+	min-height: 450px;
+	height: auto !important;
+	height: 450px;
+}
+
+div#content div.menu {
+	margin-top: -10px;
+	margin-bottom: 10px;
+}
+
+div#content div.menu li {
+	float: left;
+	padding-right: 10px;
+	margin-right: 10px;
+	border-right: 1px solid #bbb;
+}
+
+div#content div.menu li:first {
+}
+
+div#content div.menu li:last {
+	border-right: none;
+	margin-right: 0;
+	padding-right: 0;
+}
+
+div#title {
+	border-bottom:1px solid #BCBCB7;
+	margin-bottom:15px;
+	padding-bottom:8px;
+	position: relative;
+}
+
+div#title h1 {
+	color:#373D40;
+	float:left;
+	font-size:200%;
+	font-weight:bold;
+	margin-left:12px;
+}
+
+div#title #admin-bar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 4px 0;
+}
+
+/** FOOTER **/
+div#footer-wrap {
+	background:url(images/bg-footer.gif) repeat-x;
+	height:113px;
+	position:relative;
+	text-align: left;
+}
+div#footer {width:960px; margin:0 auto; padding:10px;}
+
+div#footer-top {color:#f2f2f2;}
+div#footer-top h4 {color:#fff; text-transform:uppercase; margin:5px 0; font-size:120%; font-weight:bold;}
+div#footer-top a {color:#adc3d3; font-weight:bold; font-size:0.9em; text-decoration:none;}
+div#footer-top a:hover {color:#fff;}
+
+div#footer-top h2 {font-size:160%; text-transform:uppercase; padding-top:10px; padding-right:10px; font-weight:bold;}
+div#footer-top h2 a {color:#a1a5a6;}
+div#footer-top h2 a:hover {color:#c7cdcf;}
+
+div#footer-bottom {margin-top:30px; text-align: center;}
+div#footer-bottom p {color:#717272; font-size:0.9em;}
+div#footer-bottom p a {color:#ccc; text-decoration:none;}
+
+.align-left {
+	float: left;
+}
+
+.align-right {
+	float: right;
+}
+
+table tr {
+	height: 25px;
+	line-height: 25px;
+	border-bottom: 1px solid #b9b9b9;
+}
+
+table tr th {
+	height: 35px;
+}
+
+td.table-action a.view {
+	background: url("images/icon-delete.gif") no-repeat center left;
+}
+
+td.table-action a.edit {
+	background: url("images/icon-edit.gif") no-repeat center left;
+}
+
+td.table-action a.delete {
+	background: url("images/icon-delete.gif") no-repeat center left;
+	margin-right: 0 !important;
+}
+
+td.table-action {
+	width: 191px;
+}
+
+td.table-action a {
+	color: #666;
+	display: inline-block;
+	height: 16px;
+	margin-right: 10px;
+	padding-left: 20px;
+	text-align: right;
+	text-decoration: none;
+	height: 25px;
+	line-height: 25px;
+}
+
+td.table-action a:hover {
+	color: #000;
+}
+
+div.actions {
+	text-align: right;
+	margin: 10px 0;
+}
+
+a.button {
+	background: url("images/bg-buttons-left.gif") no-repeat scroll 0 0 transparent;
+	color: #fff;
+	display: inline-block;
+	font-size: 9pt;
+	font-weight: bold;
+	height: 21px;
+	padding: 0 0 0 15px;
+	text-decoration: none;
+}
+
+a.button span {
+	background: url("images/bg-buttons-right.gif") no-repeat scroll right center transparent;
+	display: block;
+	line-height: 21px;
+	padding: 0 15px 0 0;
+}
+
+a.button:hover span {
+	color: #000;
+}
+
+p.form {
+	padding: 2px 0;
+}
+
+p.form label {
+	text-align: right;
+	height: 22px;
+	line-height: 22px;
+}
+
+p.form label span {
+	padding-left: 5px;
+	position: relative;
+	top: -2px;
+}
+
+p.form label.intitule {
+	width: 150px;
+	float: left;
+	padding-right: 15px;
+}
+
+fieldset .inline {
+	margin-left: 90px;
+}
+
+p.form .form-select {
+	margin: 2px 0;
+}
+
+p.form .form-checkbox input {
+	margin: 5px 3px;
+}
+
+fieldset .inline p.form {
+	float: left;
+}
+
+fieldset .inline p.form label.intitule {
+	width: 60px;
+}
+
+.add_field {
+	position: relative;
+	top: 6px;
+	cursor: pointer;
+	margin-left: 10px;
+	float: left;
+}
+
+#userbox_off input, #userbox_off span {
+	float: right;
+}
+
+span.icon.user {
+	background: transparent url("images/icon-greet-user.gif") no-repeat scroll 0 5px;
+	width: 12px;
+	height: 17px;
+	display: block;
+	margin-right: 5px;
+}
+
+div#list_artiste {
+
+}
+
+div#list_artiste div.item, div#list_video div.item {
+	float: left;
+	margin: 0 6px;
+	position: relative;
+}
+
+.item.artiste div.photo img, .jackette img {
+	width: 150px;
+}
+
+div#list_artiste .item.artiste div.intitule, div#list_artiste .item.artiste div.anniversaire, #list_video .name {
+	text-align: center;
+}
+
+div#list_artiste div.bio {
+	display: none;
+}
+
+div#view_artiste div.bio {
+	margin-left: 160px;
+}
+
+div#view_artiste div.photo, div#view_video .jackette {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+
+div#view_artiste div.intitule, div#view_video div.name {
+	font-size: 20px;
+	line-height: 20px;
+}
+
+div#list_artiste h4 {
+	display: none;
+}
+div.item h4 {
+	font-size: 15px;
+	line-height: 15px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+div#view_artiste div.anniversaire {
+	margin-top: 10px;
+}
+
+div.infos {
+	margin-left: 160px;
+}
+
+div#view_video {
+	position: relative;
+}
+
+div#view_video .infos a {
+	margin-right: 5px;
+}
+
+div#view_video .add_cart {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+td.right {
+	text-align: right;
+	padding-right: 10px;
+}
+
+#infos_commande {
+	margin-bottom: 20px;
+}
+
+tr.totals {
+	background: #ccc;
+}
+
+#list_video .price {
+	position: absolute;
+	top: 0;
+	right: 0;
+	opacity: 0;
+	z-index: 100;
+}
+
+#list_video .price a {
+	display: block;
+	padding: 4px;
+	color: #1a1a1a;
+
+	-moz-border-radius: 60px;
+	-khtml-border-radius: 60px;
+	-o-border-radius: 60px;
+	-webkit-border-radius: 60px;
+	border-radius: 60px;
+
+	-moz-box-shadow: 1px 1px 5px #000;
+	-khtml-box-shadow: 1px 1px 5px #000;
+	-o-box-shadow: 1px 1px 5px #000;
+	-webkit-box-shadow: 1px 1px 5px #000;
+	box-shadow: 1px 1px 5px #000;
+
+	background: #fff;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}

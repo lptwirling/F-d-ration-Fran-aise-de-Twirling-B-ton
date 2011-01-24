@@ -1,0 +1,20 @@
+<?php
+
+echo '<form method="post" action="">';
+	echo '<fieldset>';
+		echo _FORM::legend( _( 'Legende du formulaire' ) );
+
+		echo _FORM::text( 'text' );
+		echo _FORM::numeric( 'numeric' );
+		echo _FORM::password( 'password' );
+		echo _FORM::textarea( 'textarea' );
+		echo _FORM::select( 'select' );
+		echo _FORM::checkbox( 'checkbox' );
+		echo _FORM::radio( 'radio' );
+		echo _FORM::date( 'date' );
+	echo '</fieldset>';
+
+	echo _FORM::hidden( 'name', 'valeur' );
+
+	echo _FORM::submit( _( 'Ajouter le {name_lo}' ) );
+echo '</form>';

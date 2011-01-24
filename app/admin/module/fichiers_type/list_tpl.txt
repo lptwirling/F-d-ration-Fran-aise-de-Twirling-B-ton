@@ -1,0 +1,25 @@
+<?php
+
+if ( count( $list ) > 0 ) {
+	echo '<table>';
+		echo '<thead>';
+			echo '<tr>';
+{thead}
+			echo '</tr>';
+		echo '</thead>';
+		echo '<tbody>';
+			foreach ( $list as $item ) {
+				echo '<tr>';
+{tbody}
+					echo '<td class="table-action">
+						<a class="view" href="'._LINK::href( '{name_lo}', 'view', array( '{name_lo}_id' => $item['{name_lo}_id'] ) ).'">'._( 'Voir' ).'</a><a class="edit" href="'._LINK::href( '{name_lo}', 'edit', array( '{name_lo}_id' => $item['{name_lo}_id'] ) ).'">'._( 'Editer' ).'</a><a class="delete" href="'._LINK::href( '{name_lo}', 'delete', array( '{name_lo}_id' => $item['{name_lo}_id'] ) ).'">'._( 'Supprimer' ).'</a>
+					</td>';
+				echo '</tr>';
+			}
+		echo '</tbody>';
+	echo '</table>';
+}
+
+echo '<div class="actions">';
+	echo _BUTTON::link( _( 'Ajouter un nouveau {name_lo}' ), _LINK::href( '{name_lo}', 'add' ) );
+echo '</div>';

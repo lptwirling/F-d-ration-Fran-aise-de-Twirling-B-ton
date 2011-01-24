@@ -1,0 +1,16 @@
+<?php
+
+class {name_up} extends _CRUDL
+{
+{var_public}
+	public function __construct( $id = '' )
+	{
+		$this -> _table = array(
+			'val' => '{name_lo}',
+			'alias' => '{alias}',
+			'key' => '{primary_key}'
+		);
+
+		parent::__construct( $id );
+	}
+}
